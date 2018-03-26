@@ -1,0 +1,179 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <uk.ac.reading.ps026478.playgroundwars.GameView
+        android:id="@+id/gamearea"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/gameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/title"/>
+
+        <Button
+            android:id="@+id/play_button"
+            android:text="Start Game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/title"/>
+
+        <Button
+            android:id="@+id/high_score_button"
+            android:text="High Scores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/play_button"/>
+
+        <Button
+            android:id="@+id/instructions_button"
+            android:text="How To Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/high_score_button"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="7dp"
+            android:gravity="top"
+            android:text="@string/score_text"
+            android:textSize="28sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/player_details_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/player_number"
+                android:textSize="24sp"
+                android:text="Enter Player 1 Name:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/player_name"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"/>
+
+            <Button
+                android:id="@+id/player_details_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_gravity="center"
+                android:text="Confirm"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text"
+            android:text="@string/mode_ready"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"/>
+        
+        <TextView
+            android:id="@+id/player_name_label"
+            android:text="hello"
+            android:textSize="28sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="7dp"/>
+
+        <Button
+            android:id="@+id/end_turn_button"
+            android:text="End Turn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/high_score_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:maxLines="4"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/how_to_play_title"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/how_to_play"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/how_to_play_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:text="@string/how_to_play"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_below="@+id/how_to_play_title"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/rules_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/rules"
+            android:layout_below="@+id/how_to_play_textview"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/main_menu_return_button"
+            android:text="Back To Menu"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</FrameLayout>

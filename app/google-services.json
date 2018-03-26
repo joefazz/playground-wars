@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "290461883962",
+    "firebase_url": "https://playgroundwars.firebaseio.com",
+    "project_id": "playgroundwars",
+    "storage_bucket": "playgroundwars.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290461883962:android:e40271bcaa693d0b",
+        "android_client_info": {
+          "package_name": "uk.ac.reading.ps026478.playgroundwars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290461883962-leee591j6j6tkljd9ejtg5p1p4i9k5eg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uk.ac.reading.ps026478.playgroundwars",
+            "certificate_hash": "8297ed282da06af5ef067084dc06f1df85c9e6b2"
+          }
+        },
+        {
+          "client_id": "290461883962-kfnk4g41ipr3lpcggm8qqf8k2r9cvnrc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-eCtIDI-BOLbmvv3zYflPy7sIoQY1CdE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290461883962-kfnk4g41ipr3lpcggm8qqf8k2r9cvnrc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
